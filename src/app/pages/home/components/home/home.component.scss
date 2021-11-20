@@ -1,0 +1,23 @@
+.carta{
+  display:inline-block;
+  max-width: 500px;
+
+  &:hover{
+    transform: scale(.99);
+    transition: all 50ms ;
+  }
+  button{
+    margin-bottom: 10px;
+  }
+  button:hover{
+    transform: scale(1.1);
+    transition: all 50ms ;
+  }
+}
+
+.mat-conteiner{
+  margin-top: 50px;
+  width: 100%;
+   text-align:center;
+}
+

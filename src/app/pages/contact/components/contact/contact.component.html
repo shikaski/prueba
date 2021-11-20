@@ -1,0 +1,64 @@
+<div class="cart-conteiner">
+<mat-card class="form-conteiner" >
+    <h1>CONTACTENOS</h1>
+ <form [formGroup]="formData" (ngSubmit)="submitForm()" class="form">
+   <mat-form-field appearance="fill">
+     <mat-label for="name" >Nombre</mat-label>
+     <input
+      matInput
+      formControlName="name"
+      name="name"
+      id="name"
+      placeholder="Nombre"
+      type="text"
+     >
+    </mat-form-field>
+
+      <br />
+    <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+     <input
+      matInput
+      formControlName="mail"
+      name="mail"
+      id="mail"
+      placeholder="mail"
+      type="text"
+     >
+    </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Pais</mat-label>
+        <mat-select formControlName="country">
+          <mat-option>------</mat-option>
+          <mat-option *ngFor="let country of countries" [value]="country">{{country.name}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    <br />
+    <div class="pog">
+      <p>Cual es su genero?</p>
+    <mat-radio-group formControlName="sex">
+      <mat-radio-button value="male" >Hombre</mat-radio-button>
+      <mat-radio-button value="female" >Mujer</mat-radio-button>
+    </mat-radio-group>
+  </div>
+      <br />
+      <div class="checkbox">
+      <label for="descont">Desea recibir ofertas?</label>
+      <mat-checkbox formControlName="descont" type="checkbox"></mat-checkbox>
+    </div>
+      <!-- <mat-form-field >
+        <mat-checkbox
+         formControlName="descont"
+        name="descont"
+        id="descint"
+        type="checkbox">Desea recibir ofertas</mat-checkbox>
+        </mat-form-field> -->
+
+        <mat-card-actions>
+          <button mat-raised-button  color="primary" type="submit" >Enviar</button>
+          <button mat-raised-button  color="primary" (click)="resetForm()">Reset</button>
+        </mat-card-actions>
+ </form>
+</mat-card>
+</div>

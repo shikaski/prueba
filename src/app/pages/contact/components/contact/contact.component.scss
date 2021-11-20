@@ -1,0 +1,29 @@
+.form{
+  &-conteiner{
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 90px;
+  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+mat-card{
+  width: 500px;
+
+}
+mat-radio-button{
+ margin: 20px;
+}
+.cart-conteiner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+

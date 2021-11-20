@@ -1,0 +1,9 @@
+<div class="product-conteiner">
+<main>
+  <h2>Su carrito</h2>
+  <h4 *ngIf="products.length===0">Aun no se han agregado productos a su carrito</h4>
+  <div class="conteiner">
+  <app-product *ngFor="let product of products" [productData]="product" (productRemovalEvent)="getProduct()"></app-product>
+  </div>
+</main>
+</div>

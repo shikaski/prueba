@@ -1,0 +1,19 @@
+main{
+  text-align: center;
+
+  img{
+    max-width: 300px;
+  }
+  .conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+
+    app-product{
+      flex-basis: 30%;
+    }
+
+  }
+}

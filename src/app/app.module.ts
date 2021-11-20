@@ -3,6 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CoreModule } from './core/core.module';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ContactComponent } from './pages/contact/components/contact/contact.component';
+import { CdkAutofill } from '@angular/cdk/text-field';
+
 
 @NgModule({
   declarations: [
@@ -10,7 +16,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    CoreModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

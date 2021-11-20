@@ -1,0 +1,16 @@
+mat-card{
+  img{
+    max-height: 300px;
+    max-width: 300px;
+    object-fit: cover;
+  }
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 300px;
+  gap: 20px;
+}
+.product-conteiner{
+  gap: 20px;
+}

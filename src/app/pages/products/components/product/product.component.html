@@ -1,0 +1,10 @@
+<mat-card>
+<h4>{{productData.title}}</h4>
+  <img mat-card-image src="{{productData.image}}">
+
+  <div>
+    <button (click)="addProductTocart()" mat-raised-button color="primary">
+      Agregar al carrito <mat-icon>shopping_cart</mat-icon>
+    </button>
+  </div>
+</mat-card>
